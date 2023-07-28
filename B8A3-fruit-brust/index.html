@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- daisyUi cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- custom -->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          "nav-bg": '#F85559',
+        }
+      }
+    }
+  }
+</script>
+
+
+
+
+</head>
+<body>
+
+    <header>
+
+    <section class="navbar">
+
+
+      <div class="navbar container mx-auto bg-nav-bg rounded-3xl p-4">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52">
+              <li><a>Home</a></li>
+            
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+            
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+         
+        </div>
+        <img class="h-12" src="./images/logo.png" alt="">
+        <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+       
+        <div class="navbar-end">
+          <div class="form-control">
+            <input type="text" placeholder="Search Here" class="input input-bordered rounded-2xl w-24 md:w-auto" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+   
+
+    <section class="container mx-auto mt-9">
+
+      <div class="carousel w-full">
+        
+       <div id="slide1" class="carousel-item relative w-full">
+        <div class="hero w-full" style="background-image: url('./images/banner1.png');">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="text-center lg:max-w-md max-w-xs lg:pb-9 pb-0">
+              <h1 class="text-white lg:text-5xl text-2xl font-semibold pb-3">Exotic tastes at your
+              doorstep</h1>
+              <p class="text-white pb-5 text-sm">We supply highly quality organic products</p>
+              <button class="btn btn-error text-white">Shop Now</button>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a> 
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <div id="slide2" class="carousel-item relative w-full">
+          <div class="hero w-full" style="background-image: url('./images/banner2.png');">
+            <div class="hero-overlay bg-opacity-60"></div>
+              <div class="text-center lg:max-w-md max-w-xs lg:pb-9 pb-0">
+                  <h1 class="text-white lg:text-5xl text-2xl font-semibold pb-3">Exotic tastes at your
+                  doorstep</h1>
+                  <p class="text-white pb-5 text-sm">We supply highly quality organic products</p>
+                  <button class="btn btn-error text-white">Shop Now</button>
+              </div>
+            </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a> 
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <div id="slide3" class="carousel-item relative w-full">
+         <div class="hero w-full" style="background-image: url('./images/banner3.png');">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="text-center lg:max-w-md max-w-xs lg:pb-9 pb-0">
+              <h1 class="text-white lg:text-5xl text-2xl font-semibold pb-3">Exotic tastes at your
+              doorstep</h1>
+              <p class="text-white pb-5 text-sm">We supply highly quality organic products</p>
+              <button class="btn btn-error text-white">Shop Now</button>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a> 
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      
+      </div>
+
+    </section>
+
+    <section>
+      <div class="lg:grid lg:grid-cols-5 bg-white lg:max-w-4xl  mx-auto justify-center gap-8 rounded-md relative -mt-10 p-6 hidden">
+        <div class="text-center">
+            <img src="./images/fruit1.png" alt="">
+            <p>Strawberry</p>
+        </div>
+        <div class="text-center">
+            <img src="./images/fruit2.png" alt="">
+            <p>Orange</p>
+        </div>
+        <div class="text-center">
+            <img src="./images/fruit3.png" alt="">
+            <p class="pt-2">Mango</p>
+        </div>
+        <div class="text-center"> 
+            <img src="./images/fruit4.png" alt="">
+            <p>Strawberry</p>
+        </div>
+        <div  class="text-center">
+            <img src="./images/fruit5.png" alt="">
+          <p>Mango</p>
+           </div>
+        </div>
+  </section>
+
+
+
+  <section class="container mx-auto">
+    <div class="lg:flex justify-center lg:justify-between mx-auto w-full">
+        <div>
+            <h1 class="text-4xl font-bold pb-3 lg:pl-0">Deal of the day</h1>
+                <p class="lg:text-start text-center text-sm lg:pl-0 pb-4">This fruit is very good, there is no formal link in this neck, you can buy fresh fruit, the price is low, 5 stars and</p>
+        </div>
+                <div class="flex justify-center lg:justify-between gap-3 lg:pl-0">
+                    <div>
+                        <h1 class="text-3xl font-bold">29</h1>
+                        <p>days</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-bold">15</h1>
+                        <p>hours</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-bold">25</h1>
+                        <p>minutes</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div>
+                    <h1 class="text-3xl font-bold">08</h1>
+                    <p>seconds</p>
+                    </div>
+                   </div>
+            </div>
+</section>
+
+<!-----card section------>
+<section class="container mx-auto grid lg:grid-cols-4 grid-cols-1  gap-3 pt-8">
+  <div class="card bg-base-100 border-2">
+      <figure class="px-10 pt-10">
+        <img src="./images/fruit5.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">12.90$ - 18.85$</h2>
+        <p>Apple</p>
+        <div class="rating rating-lg rating-half w-40">
+          <input type="radio" name="rating-10" class="rating-hidden" />
+          <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" checked />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+        </div>
+        <div class="card-actions">
+          <!-- Open the modal using ID.showModal() method -->
+          <button class="text-red-500" onclick="my_modal_1.showModal()">Details</button>
+      <dialog id="my_modal_1" class="modal">
+          <div class="card bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="./images/fruit5.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title text-3xl">Red Dragon</h2>
+                <p class="text-xs">Professional employees are there for you to pick the most
+                  amazing and fresh fruits.</p>
+                <div class="rating rating-lg rating-half w-40">
+                  <input type="radio" name="rating-10" class="rating-hidden" />
+                  <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+                </div>
+                <div class="flex gap-4">
+                  <div>
+                      <button class="btn btn-outline btn-error">Close</button>
+                  </div>
+                  <div>
+                      <button class="btn btn-error text-white">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+          </dialog>            
+        </div>
+      </div>
+    </div>
+     <div class="card bg-base-100 border-2">
+      <figure class="px-10 pt-10">
+        <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">12.90$ - 18.85$</h2>
+        <p>Orange</p>
+        <div class="rating rating-lg rating-half w-40">
+          <input type="radio" name="rating-10" class="rating-hidden" />
+          <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" checked />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+        </div>
+        <div class="card-actions">
+          <!-- Open the modal using ID.showModal() method -->
+      <button class="text-error" onclick="my_modal_1.showModal()">Details</button>
+      <dialog id="my_modal_2" class="modal">
+          <div class="card  bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title text-3xl">Red Dragon</h2>
+                <p class="text-xs">Professional employees are there for you to pick the most
+                  amazing and fresh fruits.</p>
+                <div class="rating rating-lg rating-half w-40">
+                  <input type="radio" name="rating-10" class="rating-hidden" />
+                  <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+                </div>
+                <div class="flex gap-4">
+                  <div>
+                      <button class="btn btn-outline btn-error">Close</button>
+                  </div>
+                  <div>
+                      <button class="btn btn-error text-white">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+          </dialog>
+        </div>
+      </div>
+    </div>
+    <div class="card  bg-base-100 border-2">
+      <figure class="px-10 pt-10">
+        <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">12.90$ - 18.85$</h2>
+        <p>Red Dragon</p>
+        <div class="rating rating-lg rating-half w-40">
+          <input type="radio" name="rating-10" class="rating-hidden" />
+          <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" checked />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+        </div>
+        <div class="card-actions">
+          <!-- Open the modal using ID.showModal() method -->
+      <button class="text-error" onclick="my_modal_1.showModal()">Details</button>
+      <dialog id="my_modal_3" class="modal">
+          <div class="card  bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title text-3xl">Red Dragon</h2>
+                <p class="text-xs">Professional employees are there for you to pick the most
+                  amazing and fresh fruits.</p>
+                <div class="rating rating-lg rating-half w-40">
+                  <input type="radio" name="rating-10" class="rating-hidden" />
+                  <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+                </div>
+                <div class="flex gap-4">
+                  <div>
+                      <button class="btn btn-outline btn-error">Close</button>
+                  </div>
+                  <div>
+                      <button class="btn btn-error text-white">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+          </dialog>           
+        </div>
+      </div>
+    </div>
+    
+    <div class="card  bg-base-100 border-2">
+      <figure class="px-10 pt-10">
+        <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">12.90$ - 18.85$</h2>
+        <p>Banana</p>
+        <div class="rating rating-lg rating-half w-40">
+          <input type="radio" name="rating-10" class="rating-hidden" />
+          <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" checked />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+          <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+        </div>
+        <div class="card-actions">
+          <!-- Open the modal using ID.showModal() method -->
+      <button class="text-red-500" onclick="my_modal_1.showModal()">Details</button>
+      <dialog id="my_modal_4" class="modal">
+          <div class="card  bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title text-3xl">Red Dragon</h2>
+                <p class="text-xs">Professional employees are there for you to pick the most
+                  amazing and fresh fruits.</p>
+                <div class="rating rating-lg rating-half w-40">
+                  <input type="radio" name="rating-10" class="rating-hidden" />
+                  <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-red-300 mask mask-star-2 mask-half-2" />
+                </div>
+                <div class="flex gap-4">
+                  <div>
+                      <button class="btn btn-outline btn-error">Close</button>
+                  </div>
+                  <div>
+                      <button class="btn btn-error text-white">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+          </dialog>
+        </div>
+      </div>
+    </div>
+</section>
+<div class="max-w-5xl mx-auto text-center pt-9">
+  <button class="btn btn-error text-white">Shop All</button>
+</div>
+
+<section class="w-full pt-9 lg:pt-24 ">
+  <div class="container  mx-auto lg:max-w-5xl rounded-xl " style="background-image: url(./images/team.png);">
+      <div class="hero-overlay bg-opacity-60 rounded-xl"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-3xl pt-4 lg:pt-16">
+          <h1 class="mb-5 text-3xl font-bold">Meet the team section
+          </h1>
+          <p class="max-w-xs lg:max-w-2xl mx-auto -mb-2">we strive to do everything do that you can comfortably and productively work in our space and create amazing products and services</p>
+          
+     
+          <section class="grid lg:grid-cols-4 grid-cols-1 lg:max-w-5xl mx-auto pb-16">
+              <div class="max-w-lg mx-auto justify-center">
+                  <figure class="px-10 pt-10 w-30">
+                    <img src="./images/member1.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center justify-center">
+                    <h2 class="text-sm font-bold">Awlad Hossain</h2>
+                    <p>Fruits Expert</p>
+                    <div class="flex w-7 gap-3 max-w-sm mx-auto justify-center">
+                      <img src="./images/icons 2.png" alt="">
+                      <img src="./images/icons 1.png" alt="">
+                      <img src="./images/icons 3.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="max-w-lg mx-auto justify-center">
+                  <figure class="px-10 pt-10 w-30">
+                    <img src="./images/member2.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body justify-center">
+                    <h2 class="text-sm font-bold">Safia Chowdhury</h2>
+                    <p>Fruits Expert</p>
+                    <div class="flex w-7 gap-3 max-w-sm mx-auto justify-center">
+                      <img src="./images/icons 2.png" alt="">
+                      <img src="./images/icons 1.png" alt="">
+                      <img src="./images/icons 3.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="max-w-lg mx-auto justify-center">
+                  <figure class="px-10 pt-10 w-30">
+                    <img src="./images/member3.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center justify-center">
+                    <h2 class="text-sm font-bold">Rokib Hossain</h2>
+                    <p>Fruits Expert</p>
+                    <div class="flex w-7 gap-3 max-w-sm mx-auto justify-center">
+                      <img src="./images/icons 2.png" alt="">
+                      <img src="./images/icons 1.png" alt="">
+                      <img src="./images/icons 3.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="max-w-lg mx-auto justify-center">
+                  <figure class="px-10 pt-10 w-30">
+                    <img src="./images/member4.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center justify-center">
+                    <h2 class="text-sm font-bold">Chaity</h2>
+                    <p>Fruits Expert</p>
+                    <div class="flex w-7 gap-3 max-w-sm mx-auto justify-center">
+                      <img src="./images/icons 2.png" alt="">
+                      <img src="./images/icons 1.png" alt="">
+                      <img src="./images/icons 3.png" alt="">
+                    </div>
+                  </div>
+                </div>
+          </section>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section>
+  <div class="max-w-xs lg:max-w-2xl mx-auto text-center mt-10 lg:mt-24">
+      <h1 class="text-3xl font-bold pb-3">Why Choose Us</h1>
+      <p>This fruit is very good, there is no formal link in this neck, you can buy fresh fruit, the price is low, 5 stars and</p>
+  </div>
+  <div class="lg:flex justify-between lg:max-w-5xl mx-auto pt-8 gap-8">
+      <div class="">
+          <div class="flex gap-4 pb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none">
+              <path d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z" fill="#121212"/>
+            </svg>
+              <div>
+                  <h2 class="text-base font-bold pb-2">Dedicated Team</h2>
+              <div class="w-20 border-b-2"></div>
+              <p class="pt-2 text-xs">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              </div>
+          </div>
+          <div class="flex gap-4 pb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none">
+              <path d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z" fill="#121212"/>
+            </svg>
+              <div>
+                  <h2 class="text-base font-bold pb-2">Fresh is Best</h2>
+              <div class="w-20 border-b-2"></div>
+              <p class="pt-2 text-xs">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              </div>
+          </div>
+          <div class="flex gap-4 pb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none">
+              <path d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z" fill="#121212"/>
+            </svg>
+              <div>
+                  <h2 class="text-base font-bold pb-2">Gift Certificates</h2>
+              <div class="w-20 border-b-2"></div>
+              <p class="pt-2 text-xs">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              </div>
+          </div>
+      </div>
+      <div class="">
+          <img src="./images/whychoose1.png" alt="">
+      </div>
+      <div class="">
+          <div class="flex gap-4 pb-5">
+              <div class="text-right">
+                  <h2 class="text-base font-bold pb-2">Integrated Supplier</h2>
+                  <div class="w-20 border-b-2 ml-auto"></div>
+                  <p class="pt-2 text-xs">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none">
+                <path d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z" fill="#121212"/>
+              </svg>
+          </div>
+          <div class="flex gap-4 pb-5">
+              <div class="text-right">
+                  <h2 class="text-base font-bold pb-2">Sustainable Practice</h2>
+                  <div class="w-20 border-b-2 ml-auto"></div>
+                  <p class="pt-2 text-xs">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none">
+                <path d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z" fill="#121212"/>
+              </svg>
+          </div>
+          <div class="flex gap-4 pb-5">
+              <div class="text-right">
+                  <h2 class="text-base font-bold pb-2">The Benefits Only</h2>
+                  <div class="w-20 border-b-2 ml-auto"></div>
+                  <p class="pt-2 text-xs">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none">
+                <path d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z" fill="#121212"/>
+              </svg>
+          </div>
+     </div>
+  </div>
+</section>
+
+
+
+  
+    
+
+    </header>
+    
+    <footer class="footer footer-center p-10 bg-black text-primary-content mt-10 lg:mt-24">
+      <div class="lg:max-w-3xl mx-auto max-w-screen-2xl">
+          <div class="navbar-center align-middle">
+              <a class="btn btn-ghost normal-case text-xl text-white"><img class="w-8" src="images/logo.png" alt="">Fruit Burst</a>
+            </div>
+        <div class="grid lg:grid-cols-6 grid-cols-4 justify-center gap-8 text-white pt-4">
+          <p>Home</p>
+          <p>About Us</p>
+          <p>Shop</p>
+          <p>All Fruits</p>
+          <p>Support</p>
+          <p>My Account</p>
+        </div>
+      </div> 
+      <div>
+        <div class="grid grid-flow-col gap-4 text-white">
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a> 
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+        </div>
+      </div>
+    </footer>
+    
+</body>
+</html>
